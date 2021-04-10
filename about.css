@@ -13,16 +13,6 @@
     height: 60px;
     width: 100%;
 }
-@keyframe  topDown{
-    from{
-     transform:TranslateY()
-      font-size:20px;
-    }
-    to {
-       top:20px;
-       font-size:25px;
-    }
-}
 .content-header{
     display: flex;
     align-items: center;
@@ -55,7 +45,7 @@
 .banner-container {  
    height: 300px;
    width: 100%;
-   background-image: url('../images/banner.jpg');
+   background-image: url('./images/banner.jpg');
    background-size: cover;
    background-position:center;
    justify-content: center;
@@ -133,7 +123,7 @@ margin-bottom: 20px;
     margin-top: 30px;
 }
  .card .course-img{
-    background-image: url('../images/phone.png');   
+    background-image: url('./images/phone.png');   
     width: 100%;
     height:50%;
     background-position: center;
@@ -183,7 +173,7 @@ margin-bottom: 20px;
     font-size: 15px;
 }
 .teacher-img{
-    background-image: url('../images/my-tam-teacher.jpg');
+    background-image: url('./images/my-tam-teacher.jpg');
     width: 200px;
     height:160px;
     background-position: center;
@@ -235,7 +225,7 @@ margin-bottom: 20px;
     justify-content: space-between;
 }
 .contact-img{
-    background-image: url('../images/phone.png');
+    background-image: url('./images/phone.png');
     height: 380px;
     background-position: center;
     background-size: cover;
