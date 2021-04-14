@@ -1,56 +1,64 @@
     * {
-    padding: 0;
-    margin: 0;
-}
-
-form {
-    margin-top: 20px;
-}
-
-.title {
-    padding-top: 50px;
-}
-
-#rsl {
-    padding: 3px;
-}
-
-.form-item label {
-    width: 150px;
-}
-
-legend {
-    background-color: gray;
-    padding: 5px;
-}
-
-fieldset {
-    margin-top: 50px;
-    margin-left: 100px;
-    background-color: #eeeeee;
-    padding-left: 50px;
-    width: 82%;
-    padding-top: 2 0px;
-    * {
         padding: 0;
         margin: 0;
     }
+    
     form {
         margin-top: 20px;
     }
+    
     .title {
         padding-top: 50px;
     }
+    
     #rsl {
         padding: 3px;
     }
+    
     .form-item label {
         width: 150px;
     }
+    
     legend {
         background-color: gray;
         padding: 5px;
     }
+    
+    fieldset {
+        margin-top: 50px;
+        margin-left: 100px;
+        background-color: #eeeeee;
+        padding-left: 50px;
+        width: 82%;
+        padding-top: 2 0px;
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    form {
+        margin-top: 20px;
+    }
+    
+    .title {
+        padding-top: 50px;
+    }
+    
+    #rsl {
+        padding: 3px;
+    }
+    
+    .form-item label {
+        width: 150px;
+    }
+    
+    legend {
+        background-color: gray;
+        padding: 5px;
+    }
+    
     fieldset {
         margin-top: 50px;
         margin-left: 100px;
