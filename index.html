@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./demo.css">
+    <script src="./demo.js"></script>
     <title>Document</title>
 </head>
 
@@ -18,25 +19,25 @@
                 <form action="#">
                     <div class="form-item">
                         <label for="number-first">Nhập số a:</label>
-                        <input type="number" id="number-first" onkeyup="cacullation()" /><br><br><br>
+                        <input type="number" id="number-first" /><br><br><br>
                     </div>
                     <div class="form-item">
                         <label for="number-second">Nhập số b:</label>
-                        <input type="number" id="number-second" onkeyup="cacullation()" /><br><br><br>
+                        <input type="number" id="number-second" /><br><br><br>
                     </div>
                     <label for="add">Cộng:</label>
-                    <input type="radio" id="add" name="cal" value="add" onclick="cacullation()" />
+                    <input type="radio" id="add" name="cal" value="add" />
                     <label for="minus">Trừ:</label>
-                    <input type="radio" id="minus" name="cal" value="minus" onclick="cacullation()" />
+                    <input type="radio" id="minus" name="cal" value="minus" />
                     <label for="multiply">Nhân:</label>
-                    <input type="radio" id="multiply" name="cal" value="multiply" onclick="cacullation()" />
+                    <input type="radio" id="multiply" name="cal" value="multiply" />
                     <label for="divide">Chia:</label>
-                    <input type="radio" id="divide" name="cal" value="divide" onclick="cacullation()" /><br><br><br>
+                    <input type="radio" id="divide" name="cal" value="divide" /><br><br><br>
                     <div class="form-item">
                         <label for="result">Kết quả:</label>
-                        <input type="text" id="result" placeholder="" /><br><br><br>
+                        <input type="text" id="result" /><br><br><br>
                     </div>
-                    <button id="rsl" onclick="cacullation()">Kết quả</button><br><br>
+                    <button type="button" id="rsl" onclick="caculation()">Kết quả</button><br><br>
                 </form>
             </fieldset>
         </div>
