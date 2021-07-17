@@ -5,42 +5,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./about.css">
-    <script src="./index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Document</title>
 </head>
 
 <body>
-    <main>
-        <div id="caculation">
-            <fieldset>
-                <legend>Chương trình máy tính</legend>
-                <form action="#">
-                    <div class="form-item">
-                        <label for="number-first">Nhập số a:</label>
-                        <input type="number" id="number-first" /><br><br><br>
-                    </div>
-                    <div class="form-item">
-                        <label for="number-second">Nhập số b:</label>
-                        <input type="number" id="number-second" /><br><br><br>
-                    </div>
-                    <label for="add">Cộng:</label>
-                    <input type="radio" id="add" name="cal" value="add" />
-                    <label for="minus">Trừ:</label>
-                    <input type="radio" id="minus" name="cal" value="minus" />
-                    <label for="multiply">Nhân:</label>
-                    <input type="radio" id="multiply" name="cal" value="multiply" />
-                    <label for="divide">Chia:</label>
-                    <input type="radio" id="divide" name="cal" value="divide" /><br><br><br>
-                    <div class="form-item">
-                        <label for="result">Kết quả:</label>
-                        <input type="text" id="result" /><br><br><br>
-                    </div>
-                    <button type="button" id="rsl" onclick="caculation()">Kết quả</button><br><br><br>
-                </form>
-            </fieldset>
+    <header>
+        <div id="header">
+            <div class="container">
+                <div class="image-header"><i class="fas fa-birthday-cake"></i></div>
+                <div class="nav-header">
+                    <ul class="nav">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Store</a></li>
+                    </ul>
+                </div>
+                <div class="phone-number">
+                    <i class="fas fa-phone-alt"></i>
+                    <p class="number">+123 456 789</p>
+                </div>
+                <div class="detail-cart">
+                    <i class="fas fa-cart-plus"></i>
+                    <p class="amount-item">2 Items - $10.49</p>
+                </div>
+            </div>
         </div>
+    </header>
+    <main>
+        <section id="banner">
+            <p class="title-section">Welcome to <span class="brown">Denish's</span></p>
+            <input type="submit" class="explore" value="Explore">
+        </section>
+        <section id="section-store">
+            <p class="section-title">Our Store</p>
+            <div class="navigation">
+                <input type="submit" class="input" data-cake="all" value="All">
+                <input type="submit" class="input" data-cake="cakes" value="Cakes">
+                <input type="submit" class="input" data-cake="cupcakes" value="Cupcakes">
+                <input type="submit" class="input" data-cake="sweet" value="Sweet">
+                <input type="submit" class="input" data-cake="doughnuts" value="Doughnuts">
+            </div>
+            <div class="search-item">
+                <input type="text" placeholder="Filter Item..." class="input-filter">
+                <i class="fas fa-search"></i>
+            </div>
+        </section>
+        <section id="section-item-cakes">
+            <div class="container">
+                <h1 class="description" style="display: none;">Can't find item</h1>
+                <div class="item-cakes" data-filter="cakes">
+                    <div class="image-cake">
+                        <img src="/images1/cake-1.jpeg" class="img" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="price-cake">
+                        <p class="name-cake">Cake1 Item</p>
+                        <p class="price">20$</p>
+                    </div>
+                </div>
+                <div class="item-cakes" data-filter="cakes">
+                    <div class="image-cake">
+                        <img src="/images1/cake-2.jpeg" class="img" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="price-cake">
+                        <p class="name-cake">Cake2 Item</p>
+                        <p class="price">40$</p>
+                    </div>
+                </div>
+                <div class="item-cakes" data-filter="cakes">
+                    <div class="image-cake">
+                        <img src="/images1/cake-3.jpeg" alt="" class="img" width=" 100% " height="100% ">
+                    </div>
+                    <div class="price-cake ">
+                        <p class="name-cake ">Cake3 Item</p>
+                        <p class="price ">34$</p>
+                    </div>
+                </div>
+                <div class="item-cakes" data-filter="cupcakes">
+                    <div class="image-cake ">
+                        <img src="/images1/cupcake-1.jpeg " alt=" " class="img" width=" 100% " height="100% ">
+                    </div>
+                    <div class="price-cake">
+                        <p class="name-cake">Cupcake1 Item</p>
+                        <p class="price ">36$</p>
+                    </div>
+                </div>
+                <div class="item-cakes" data-filter="cupcakes">
+                    <div class="image-cake ">
+                        <img src="/images1/cupcake-2.jpeg " class="img" alt=" " width="100% " height="100% ">
+                    </div>
+                    <div class="price-cake ">
+                        <p class="name-cake ">Cupcake2 Item</p>
+                        <p class="price ">34$</p>
+                    </div>
+                </div>
+                <div class="item-cakes" data-filter="cupcakes">
+                    <div class="image-cake">
+                        <img src="/images1/cupcake-3.jpeg " alt=" " class="img" width="100% " height="100% ">
+                    </div>
+                    <div class="price-cake">
+                        <p class="name-cake">Cupcake3 Item</p>
+                        <p class="price">34$</p>
+                    </div>
+                </div>
+                <div class="item-cakes" data-filter="doughnuts">
+                    <div class="image-cake">
+                        <img src="/images1/doughnut-1.jpeg " class="img" alt=" " width="100% " height="100% ">
+                    </div>
+                    <div class="price-cake">
+                        <p class="name-cake">Doughnuts1 Item</p>
+                        <p class="price ">45$</p>
+                    </div>
+                </div>
+                <div class="item-cakes" data-filter="doughnuts">
+                    <div class="image-cake">
+                        <img src="/images1/doughnut-2.jpeg " class="img" alt=" " width="100% " height="100% ">
+                    </div>
+                    <div class="price-cake ">
+                        <p class="name-cake ">Doughnuts2 Item</p>
+                        <p class="price ">34$</p>
+                    </div>
+                </div>
+                <div class="item-cakes" data-filter="doughnuts">
+                    <div class="image-cake">
+                        <img src="/images1/doughnut-3.jpeg " class="img" alt=" " width="100% " height="100% ">
+                    </div>
+                    <div class="price-cake">
+                        <p class="name-cake">Doughnuts3 Item</p>
+                        <p class="price ">54$</p>
+                    </div>
+                </div>
+            </div>
+            <div id="model">
+                <div class="model-box">
+                    <div class="img-model"></div>
+                    <i class="fas fa-caret-right right"></i>
+                    <i class="fas fa-caret-left left"></i>
+                    <i class="fas fa-window-close close"></i>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="index.js"></script>
 </body>
 
 </html>

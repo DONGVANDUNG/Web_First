@@ -1,0 +1,254 @@
+#header {
+    height: 100px;
+    background-color: white;
+}
+
+#header .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+#header .nav a {
+    text-decoration: none;
+}
+
+#header .nav li:hover a {
+    color: turquoise;
+}
+
+#header .detail-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+    cursor: pointer;
+}
+
+#header .phone-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 115px;
+    cursor: pointer;
+}
+
+.image-header .fas {
+    font-size: 40px;
+    color: green;
+}
+
+#banner {
+    background-image: url(/images1/images.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .title-section {
+    font-size: 40px;
+    color: black;
+    letter-spacing: 5px;
+}
+
+#banner .brown {
+    letter-spacing: 5px;
+    color: brown;
+}
+
+#banner .explore {
+    width: 130px;
+    height: 40px;
+    background-color: chocolate;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+}
+
+#banner .explore:hover {
+    background-color: green;
+}
+
+#section-store {
+    padding-top: 50px;
+}
+
+#section-store .section-title {
+    text-align: center;
+    color: forestgreen;
+    font-size: 40px;
+}
+
+#section-store .navigation {
+    display: flex;
+    justify-content: center;
+}
+
+#section-store .input {
+    margin-right: 15px;
+    width: 100px;
+    height: 45px;
+    font-size: 17px;
+    background-color: khaki;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: rebeccapurple;
+}
+
+#section-store .input:hover {
+    background-color: aqua;
+    color: white;
+}
+
+#section-store .search-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    position: relative;
+}
+
+#section-store .search-item .fas {
+    font-size: 25px;
+    color: gray;
+    position: absolute;
+    right: 34%;
+    cursor: pointer;
+}
+
+#section-store .search-item .input-filter {
+    height: 35px;
+    border-color: springgreen;
+    margin-right: 25px;
+    padding-left: 20px;
+    font-size: 20px;
+    width: 450px;
+    border-radius: 5px;
+}
+
+#section-item-cakes .container {
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 1000px;
+    z-index: 2;
+    position: absolute;
+}
+
+#section-item-cakes {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    position: relative;
+}
+
+#section-item-cakes .item-cakes {
+    width: 28%;
+    height: 25%;
+}
+
+#section-item-cakes .item-cakes .image-cake {
+    height: 60%;
+}
+
+#section-item-cakes .img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+#section-item-cakes .price-cake {
+    border: 1px solid gray;
+    height: 40%;
+    border-top-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#section-item-cakes .price-cake .name-cake {
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 14px;
+}
+
+.active {
+    background-color: red!important;
+}
+
+#section-item-cakes .price-cake .price {
+    font-size: 22px;
+    font-weight: bold;
+    padding-right: 14px;
+}
+
+#section-item-cakes .item-cakes:hover .image-cake {
+    opacity: 0.6;
+}
+
+#model {
+    width: 100%;
+    height: 600px;
+    z-index: 3;
+    position: fixed;
+    top: 10%;
+    left: 14%;
+    display: none;
+}
+
+#model .model-box {
+    background-image: url(/images1/cake-1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 75%;
+    position: relative;
+    border-radius: 10px;
+}
+
+#model .right {
+    position: absolute;
+    font-size: 80px;
+    color: black;
+    right: -40px;
+    top: 40%;
+}
+
+#model .left {
+    position: absolute;
+    font-size: 80px;
+    color: black;
+    left: -40px;
+    top: 40%;
+}
+
+#model .right:hover,
+#model .left:hover,
+#model .close:hover {
+    color: red;
+}
+
+#model .close {
+    position: absolute;
+    font-size: 30px;
+    top: -26px;
+    right: -27px;
+}
